@@ -1,5 +1,5 @@
 
-//from demo in class - package inquirer allows questions to be asked in 
+//from demo in class - package inquirer allows questions to be asked in console
 
 const inquirer = require('inquirer');
 
@@ -51,6 +51,13 @@ const promptUser = () =>
 
     {
       type: 'input',
+      name: 'installation',
+      message: 'What does the user need to install and run this app (e.g. dependencies)?',
+      //What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+    },
+
+    {
+      type: 'input',
       name: 'usage',
       message: '',
       // Provide instructions and examples for use. Include screenshots as needed.
@@ -63,29 +70,19 @@ const promptUser = () =>
     },
     {
       type: 'input',
-      name: 'dependencies',
-      message: 'What does the user need to install and run this app (e.g. dependencies)?',
-      //What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+      name: 'license',
+      message: 'Please add details of your Licence',
     },
 
     {
       type: 'input',
       name: 'contributions',
-      message: 'Enter your LinkedIn URL.',
+      message: 'List your collaborators, if any, with links to their GitHub profiles. If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section (e.g. Github or LinkedIn). If you followed tutorials, include links to those here as well.'
     },
     {
       type: 'input',
-      name: 'credits',
-      message: 'List your collaborators, if any, with links to their GitHub profiles. If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section. If you followed tutorials, include links to those here as well.'
+      name: 'questions',
+      message: 'Please type any questions you have.',
     },
-    {
-      type: 'input',
-      name: 'github',
-      message: '',
-    },
-    {
-      type: 'input',
-      name: 'license',
-      message: 'Please add details of your Licence',
-    },
+ 
   ]);
