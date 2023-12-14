@@ -3,30 +3,30 @@
 function generateMarkdown(data) {
     // need to generate README content here based on the provided 'data'
     //back tick for start and end of template literals
-    const readmeContent = `
-    # ${data.title}
-    ## Table of Contents
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [License](#license)
-    - [Contributions](#contributions)
-    - [Questions](#questions)
+const readmeContent = `
+# ${data.title}
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributions](#contributions)
+- [Questions](#questions)
   
-    ## Installation
-    ${data.installation}
+## Installation
+${data.installation}
   
-    ## Usage
-    ${data.usage}
+## Usage
+${data.usage}
   
-    ## License
-    ${data.license}
+## License
+${data.license}
   
-    ## Contributions
+## Contributions
     ${data.contributions}
   
-    ## Questions
-    ${data.questions}
-    `;
+## Questions
+${data.questions}
+`;
   
     return readmeContent;
   };
