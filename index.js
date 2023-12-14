@@ -6,7 +6,7 @@ const inquirer = require('inquirer');
 // fs is a Node standard library package for reading and writing files
 const fs = require('fs');
 
-const generateMarkdown = require("./generatemarkdown");
+const myMarkdownGenerator = require("./generatemarkdown");
 
 
 // Return the contents of 'data.csv' as a string in the variable "data"
@@ -22,8 +22,7 @@ const generateMarkdown = require("./generatemarkdown");
 // );
 
 
-const promptUser = () =>
-  inquirer.prompt([
+const questions = [
     {
       type: 'input',
       name: 'title',
@@ -59,8 +58,7 @@ const promptUser = () =>
     {
       type: 'input',
       name: 'usage',
-      message: '',
-      // Provide instructions and examples for use. Include screenshots as needed.
+      message: 'Provide instructions and examples for use. Include screenshots as needed',
 
       // To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
@@ -84,5 +82,17 @@ const promptUser = () =>
       name: 'questions',
       message: 'Please type any questions you have.',
     },
- 
-  ]);
+
+];
+
+//code from class activity 10 day 2
+  inquirer.prompt(questions).then((answers) => {
+    // Write user responses to a file (example: user.json)
+    const readmeContent =myMarkdownGenerator(answers);
+    //write readme content to a file
+    fs.writeFileSync('README.md', readmeContent);
+  
+    console.log(`Updated README`);
+  
+  });
+  
