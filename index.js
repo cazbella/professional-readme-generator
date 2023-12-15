@@ -39,17 +39,6 @@ const questions = [
     },
     {
       type: 'input',
-      name: 'contents',
-      message: 'Table of Contents',
-      //- [Installation](#installation)
-      // - [Usage](#usage)
-      // - [Credits](#credits)
-      // - [License](#license)
-      //do you require a table of contents?
-    },
-
-    {
-      type: 'input',
       name: 'installation',
       message: 'What does the user need to install and run this app (e.g. dependencies)?',
       //What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
@@ -67,9 +56,10 @@ const questions = [
       //     ```
     },
     {
-      type: 'input',
+      type: 'list',
       name: 'license',
       message: 'Please add details of your Licence',
+      choices: ['MIT', 'Apache', 'BSD', 'none']
     },
 
     {
@@ -87,6 +77,7 @@ const questions = [
 
 //code from class activity 10 day 2
   inquirer.prompt(questions).then((answers) => {
+    console.log(answers);
     // Write user responses to a file (example: user.json)
     const readmeContent =myMarkdownGenerator(answers);
     //write readme content to a file
