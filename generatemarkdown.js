@@ -1,5 +1,7 @@
 //need a function to take the data and put this into markdown language
 //changed back to es6 syntax
+//duplicate this to remove deployed application link
+
 const removeLicense = (license) => {
   if (license==='none') {
     return "";
@@ -29,6 +31,9 @@ const generateBadge = (license) => {
  else if (license==='MIT') {
   return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
  }
+ else if (license==='Modzilla Public License 2.0') {
+  return "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)"
+ }
  else {
   return "";
  }
@@ -38,12 +43,22 @@ const generateMarkdown = (data) => `
 
 ${generateBadge(data.license)}
 
+### Contact Information
+- **GitHub:** [${data.github}](https://github.com/${data.github})
+- **Email:** ${data.email}
+
+
+
 ## Table of Contents
+- [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Credits](#credits)
 ${removeLicenseLink(data.license)}
-- [Contributions](#contributions)
 - [Questions](#questions)
+
+## Description
+${data.description}
 
 ## Installation
 ${data.installation}
@@ -51,10 +66,10 @@ ${data.installation}
 ## Usage
 ${data.usage}
 
-${removeLicense(data.license)}
-
-## Contributions
+## Credits
 ${data.contributions}
+
+${removeLicense(data.license)}
 
 ## Questions
 ${data.questions}

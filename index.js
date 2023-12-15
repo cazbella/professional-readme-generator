@@ -23,10 +23,20 @@ const myMarkdownGenerator = require("./generatemarkdown");
 
 
 const questions = [
+  {
+    type: 'input',
+    name: 'github',
+    message: 'What is your GitHub username?',
+  },
+  {
+    type: 'input',
+    name: 'email',
+    message: 'What is your email address?',
+  },
     {
       type: 'input',
       name: 'title',
-      message: 'What is the title of your project?',
+      message: 'What is the name of your project?',
     },
     {
       type: 'input',
@@ -49,24 +59,21 @@ const questions = [
       name: 'usage',
       message: 'Provide instructions and examples for use. Include screenshots as needed',
 
-      // To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-      //     ```md
-      //     ![alt text](assets/images/screenshot.png)
-      //     ```
+     //screenshots not required for this readme - asked in lesson
+    },
+    {
+      type: 'input',
+      name: 'credits',
+      message: 'List your collaborators, if any, with links to their GitHub profiles. If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section (e.g. Github or LinkedIn). If you followed tutorials, include links to those here as well.'
     },
     {
       type: 'list',
       name: 'license',
       message: 'Please add details of your Licence',
-      choices: ['MIT', 'Apache', 'BSD', 'none']
+      choices: ['MIT', 'Apache', 'BSD', 'Modzilla Public License 2.0', 'none']
     },
 
-    {
-      type: 'input',
-      name: 'contributions',
-      message: 'List your collaborators, if any, with links to their GitHub profiles. If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section (e.g. Github or LinkedIn). If you followed tutorials, include links to those here as well.'
-    },
+
     {
       type: 'input',
       name: 'questions',
