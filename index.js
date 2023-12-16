@@ -33,64 +33,80 @@ const questions = [
     name: 'email',
     message: 'What is your email address?',
   },
-    {
-      type: 'input',
-      name: 'title',
-      message: 'What is the name of your project?',
-    },
-    {
-      type: 'input',
-      name: 'description',
-      message: 'What is your project about? Give a detailed description of your project.',
-      //- What was your motivation?
-      // - Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-      // - What problem does it solve?
-      // - What did you learn?
-    },
-    {
-      type: 'input',
-      name: 'installation',
-      message: 'What does the user need to install and run this app (e.g. dependencies)?',
-      //What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
-    },
+  {
+    type: 'input',
+    name: 'title',
+    message: 'What is the name of your project?',
+  },
+  {
+    type: 'input',
+    name: 'description',
+    message: 'What is your project about? Give a detailed description of your project.',
+    //- What was your motivation?
+    // - Why did you build this project?
+    // - What problem does it solve?
+    // - What did you learn?
+  },
+  {
+    type: 'input',
+    name: 'installation',
+    message: 'What does the user need to install and run this project (i.e. dependencies)?',
+    //What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+  },
 
-    {
-      type: 'input',
-      name: 'usage',
-      message: 'Provide instructions and examples for use. Include screenshots as needed',
-
-     //screenshots not required for this readme - asked in lesson
+  {
+    type: 'input',
+    name: 'usage',
+    message: 'Provide instructions and examples for use.'
+    //screenshots not required for this readme - asked in lesson
+  },
+  {
+    type: 'input',
+    name: 'contributing',
+    message: 'Interested in contributing to our project? Please share your thoughts on the following - How would you like to contribute (e.g., code, bug reports, documentation)? Do you have any preferences for our coding style or development process? Any ideas or features you would like to work on or see implemented?'
+  },
+  {
+    type: 'input',
+    name: 'tests',
+    message: 'List your collaborators or resources'
+  },
+  {
+    type: 'input',
+    name: 'credits',
+    message: 'List your collaborators or resources'
+  },
+  {
+    type: 'list',
+    name: 'license',
+    message: 'Please add details of your Licence',
+    choices: ['MIT', 'Apache', 'BSD', 'Modzilla Public License 2.0', 'none']
+  },
+  {
+    type: 'input',
+    name: 'walkthrough',
+    message: 'Please add a link to the walkthrough here. Please include the protocol (e.g. https://).',
+    //code from the web for web address input
+    validate: function (input) {
+      // Basic URL validation
+      const urlRegex = /^(ftp|http|https):\/\/[^ "]+$/;
+      return urlRegex.test(input) ? true : 'Please enter a valid URL.';
     },
-    {
-      type: 'input',
-      name: 'credits',
-      message: 'List your collaborators, if any, with links to their GitHub profiles. If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section (e.g. Github or LinkedIn). If you followed tutorials, include links to those here as well.'
-    },
-    {
-      type: 'list',
-      name: 'license',
-      message: 'Please add details of your Licence',
-      choices: ['MIT', 'Apache', 'BSD', 'Modzilla Public License 2.0', 'none']
-    },
-
-
-    {
-      type: 'input',
-      name: 'questions',
-      message: 'Please type any questions you have.',
-    },
+  },
+  {
+    type: 'input',
+    name: 'questions',
+    message: 'Please type any questions you have.',
+  },
 
 ];
 
 //code from class activity 10 day 2
-  inquirer.prompt(questions).then((answers) => {
-    console.log(answers);
-    // Write user responses to a file (example: user.json)
-    const readmeContent =myMarkdownGenerator(answers);
-    //write readme content to a file
-    fs.writeFileSync('README.md', readmeContent);
-  
-    console.log(`Updated README`);
-  
-  });
-  
+inquirer.prompt(questions).then((answers) => {
+  console.log(answers);
+  // Write user responses to a file (example: user.json)
+  const readmeContent = myMarkdownGenerator(answers);
+  //write readme content to a file
+  fs.writeFileSync('README.md', readmeContent);
+
+  console.log(`Updated README`);
+});

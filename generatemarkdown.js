@@ -53,8 +53,11 @@ ${generateBadge(data.license)}
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Contributing](#contributing)
+- [Tests](#tests)
 - [Credits](#credits)
 ${removeLicenseLink(data.license)}
+- [Walkthrough](#walkthrough)
 - [Questions](#questions)
 
 ## Description
@@ -66,10 +69,19 @@ ${data.installation}
 ## Usage
 ${data.usage}
 
+## Contributing
+${data.contributing}
+
+## Tests
+${data.tests}
+
 ## Credits
-${data.contributions}
+${data.credits}
 
 ${removeLicense(data.license)}
+
+## Walkthrough
+${data.walkthrough}
 
 ## Questions
 ${data.questions}
