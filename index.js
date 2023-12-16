@@ -36,12 +36,12 @@ const questions = [
   {
     type: 'input',
     name: 'title',
-    message: 'What is the name of your project?',
+    message: 'Name - What is the name of your project?',
   },
   {
     type: 'input',
     name: 'description',
-    message: 'What is your project about? Give a detailed description of your project.',
+    message: 'Description - Please give a detailed description of your project.',
     //- What was your motivation?
     // - Why did you build this project?
     // - What problem does it solve?
@@ -50,41 +50,36 @@ const questions = [
   {
     type: 'input',
     name: 'installation',
-    message: 'What does the user need to install and run this project (i.e. dependencies)?',
+    message: 'Installation - What does the user need to install and run this project (i.e. dependencies)?',
     //What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
   },
 
   {
     type: 'input',
     name: 'usage',
-    message: 'Provide instructions and examples for use.'
+    message: 'Usage - Provide instructions and examples for use.'
     //screenshots not required for this readme - asked in lesson
   },
   {
     type: 'input',
     name: 'contributing',
-    message: 'Interested in contributing to our project? Please share your thoughts on the following - How would you like to contribute (e.g., code, bug reports, documentation)? Do you have any preferences for our coding style or development process? Any ideas or features you would like to work on or see implemented?'
+    message: 'Contributing - Interested in contributing to this project? Please share your thoughts on the following - How would you like to contribute (e.g., code, bug reports, documentation)? Do you have any preferences for our coding style or development process? Any ideas or features you would like to work on or see implemented?'
   },
   {
     type: 'input',
     name: 'tests',
-    message: 'List your collaborators or resources'
-  },
-  {
-    type: 'input',
-    name: 'credits',
-    message: 'List your collaborators or resources'
+    message: 'Tests - Please provide information on how to test the software, what testing frameworks are used, and any specific instructions for running tests.'
   },
   {
     type: 'list',
     name: 'license',
-    message: 'Please add details of your Licence',
+    message: 'License - Please add details of your Licence',
     choices: ['MIT', 'Apache', 'BSD', 'Modzilla Public License 2.0', 'none']
   },
   {
     type: 'input',
     name: 'walkthrough',
-    message: 'Please add a link to the walkthrough here. Please include the protocol (e.g. https://).',
+    message: 'Walkthrough - Please add a link to the walkthrough here. Please include the protocol (e.g. https://).',
     //code from the web for web address input
     validate: function (input) {
       // Basic URL validation
@@ -95,7 +90,7 @@ const questions = [
   {
     type: 'input',
     name: 'questions',
-    message: 'Please type any questions you have.',
+    message: 'Questions - Please add any questions you have.',
   },
 
 ];

@@ -55,7 +55,6 @@ ${generateBadge(data.license)}
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [Tests](#tests)
-- [Credits](#credits)
 ${removeLicenseLink(data.license)}
 - [Walkthrough](#walkthrough)
 - [Questions](#questions)
@@ -74,9 +73,6 @@ ${data.contributing}
 
 ## Tests
 ${data.tests}
-
-## Credits
-${data.credits}
 
 ${removeLicense(data.license)}
 

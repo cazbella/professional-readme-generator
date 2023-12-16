@@ -1,11 +1,11 @@
 
-  # g
+  # l
 
-
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ### Contact Information
-- **GitHub:** [g](https://github.com/g)
-- **Email:** g
+- **GitHub:** [l](https://github.com/l)
+- **Email:** l
 
 
 
@@ -13,27 +13,35 @@
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
-
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [License](#license)
 - [Walkthrough](#walkthrough)
 - [Questions](#questions)
 
 ## Description
-g
+l
 
 ## Installation
-g
+Install the README Generator:
 
 ## Usage
-g
+npm install -g your-readme-generator
+
+## Contributing
+Answer a series of prompts to provide project-specific details.
+
+## Tests
+Your README file is generated and ready to use!
 
 ## Credits
-undefined
+vdfv
 
-
+## License 
+MIT
 
 ## Walkthrough
-http://cazbella.org
+https://hfhs
 
 ## Questions
 none
