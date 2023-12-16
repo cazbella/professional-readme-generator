@@ -74,7 +74,7 @@ const questions = [
     type: 'list',
     name: 'license',
     message: 'License - Please add details of your Licence',
-    choices: ['MIT', 'Apache', 'BSD', 'Modzilla Public License 2.0', 'none']
+    choices: ['MIT License', 'Apache License 2.0', 'GNU Genral Public License v3.0', 'Eclipse Public License 1.0', 'Modzilla Public License 2.0', 'none']
   },
   {
     type: 'input',

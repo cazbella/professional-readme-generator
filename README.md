@@ -1,11 +1,11 @@
 
-  # l
+  # sh
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0)
 
 ### Contact Information
-- **GitHub:** [l](https://github.com/l)
-- **Email:** l
+- **GitHub:** [rstg](https://github.com/rstg)
+- **Email:** sthg
 
 
 
@@ -20,28 +20,25 @@
 - [Questions](#questions)
 
 ## Description
-l
+reg
 
 ## Installation
-Install the README Generator:
+sth
 
 ## Usage
-npm install -g your-readme-generator
+sdfgh
 
 ## Contributing
-Answer a series of prompts to provide project-specific details.
+strh
 
 ## Tests
-Your README file is generated and ready to use!
-
-## Credits
-vdfv
+strh
 
 ## License 
-MIT
+Eclipse Public License 1.0
 
 ## Walkthrough
-https://hfhs
+http://youtube.com
 
 ## Questions
-none
+foo
