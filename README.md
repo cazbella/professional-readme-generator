@@ -4,8 +4,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ### Contact Information
-- **GitHub:** [cazbella](https://github.com/cazbella)
-- **Email:** CazBella@myyahoo.com
+- **GitHub:** [Cazbella](https://github.com/Cazbella)
+- **Email:** cazbella@myyahoo.com
 
 
 
@@ -38,7 +38,7 @@ Testing my Professional Readme Generator is a step you can carry out to ensure i
 MIT License
 
 ## Walkthrough
-https://www.tobeaddeduponcompletionofthevideo.co.uk
+https://watch.screencastify.com/v/aNKpJDcT4ZBFf4P1wLy6
 
 ## Questions
 If you have any questions or need further assistance with this project, feel free to reach out. Common questions might include clarification on the installation process, guidance on using specific features, or troubleshooting any issues you may encounter. I value your feedback! You can contact me via email at cazbella@myyahoo.com. Please don't hesitate to ask!
