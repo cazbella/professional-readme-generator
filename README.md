@@ -38,6 +38,7 @@ Testing my Professional Readme Generator is a step you can carry out to ensure i
 MIT License
 
 ## Walkthrough
+Please find a link to a walkthrough below. This will demonstrate how to use the application and the features of the README produced.  
 https://watch.screencastify.com/v/aNKpJDcT4ZBFf4P1wLy6
 
 ## Questions
